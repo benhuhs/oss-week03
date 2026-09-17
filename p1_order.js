@@ -41,7 +41,7 @@ sleep(10).then(() => console.log("F"));
 
 console.log("G");
 
-// prediction:
-// actual:
-// why I was wrong (one line per miss):
-//
+// prediction: A G C D F E B
+// actual: A D G C F E B
+// why I was wrong (one line per miss): 
+// D : work()는 async 함수안데 await 키워드를 만나기 전까지는 동기 함수처럼 실행되므로 work() 내부로 들어가서 만나자마자 실행을 하게된다.
